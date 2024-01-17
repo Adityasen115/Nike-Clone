@@ -34,14 +34,14 @@ const Nav = () => {
                 
             </div>
         </nav>
-        <nav id='Sliding-menu' className='h-full w-0 fixed z-10 top-0 left-0 bg-gray-900 overflow-x-hidden pt-16 duration-500 min-lg:hidden'>
+        <nav id='Sliding-menu' className='h-full w-0 fixed z-20 top-0 left-0 bg-gray-900 overflow-x-hidden pt-16 duration-500 min-lg:hidden'>
           <ul className='p-0 space-y-4'>
           {navLinks.map((item) => (
                 <li key={item.label}
                 className='w-full'
                 >
                   <a href={item.href}
-                  className='p-2 text-white cursor-pointer border-b border-gray-500 hover:bg-gray-700 hover:text-white'
+                  className='z-20 p-2 text-white cursor-pointer border-b border-gray-500 hover:bg-gray-700 hover:text-white'
                   >
                     {item.label}
                   </a>
